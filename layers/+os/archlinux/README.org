@@ -9,19 +9,24 @@
 - [[#key-bindings][Key bindings]]
 
 * Description
-This layer does wonderful things:
-  - thing01
+This layer adds [[https://github.com/juergenhoetzel/pkgbuild-mode][PKGBUILD major mode]].
 
 * Install
 To use this configuration layer, add it to your =~/.spacemacs=. You will need to
-add =pkgbuild= to the existing =dotspacemacs-configuration-layers= list in this
+add =archlinux= to the existing =dotspacemacs-configuration-layers= list in this
 file.
 
 * Key bindings
 
-| Key Binding | Description    |
-|-------------+----------------|
-| ~SPC x x x~ | Does thing01   |
+| Key Binding | Description                                                           |
+|-------------+-----------------------------------------------------------------------|
+| ~SPC m r~   | Increase release tag by 1                                             |
+| ~SPC m b~   | Build this package                                                    |
+| ~SPC m a~   | Build a tarball containing all required files to build the package.   |
+| ~SPC m u~   | Visit URL (if defined in PKGBUILD)                                    |
+| ~SPC m m~   | Update checksum lines if the file was modified                        |
+| ~SPC m e~   | Create TAGS file by running `etags' recursively on the directory tree |
+
 # Use GitHub URLs if you wish to link a Spacemacs documentation file or its heading.
 # Examples:
 # [[https://github.com/syl20bnr/spacemacs/blob/master/doc/VIMUSERS.org#sessions]]
