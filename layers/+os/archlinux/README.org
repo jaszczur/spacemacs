@@ -1,6 +1,5 @@
-#+TITLE: pkgbuild layer
+#+TITLE: Arch Linux layer
 
-# The maximum height of the logo should be 200 pixels.
 [[img/archlinux.png]]
 
 # TOC links should be GitHub style anchors.

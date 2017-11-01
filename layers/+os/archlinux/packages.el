@@ -1,4 +1,4 @@
-;;; packages.el --- pkgbuild layer packages file for Spacemacs.
+;;; packages.el --- archlinux layer packages file for Spacemacs.
 ;;
 ;; Copyright (c) 2012-2017 Sylvain Benner & Contributors
 ;;
@@ -30,7 +30,7 @@
 ;;; Code:
 
 
-(defconst arch-packages
+(defconst archlinux-packages
   '((pkgbuild-mode :location (recipe
                              :fetcher github
                              :repo "juergenhoetzel/pkgbuild-mode"))
@@ -63,7 +63,7 @@ Each entry is either:
         recipe.  See: https://github.com/milkypostman/melpa#recipe-format")
 
 
-(defun  arch/init-pkgbuild-mode ()
+(defun  archlinux/init-pkgbuild-mode ()
   (require 'pkgbuild-mode)
   (setq auto-mode-alist (append '(("/PKGBUILD$" . pkgbuild-mode)) auto-mode-alist))
   (spacemacs/set-leader-keys-for-major-mode 'pkgbuild-mode
